@@ -16,6 +16,14 @@ loop do
     if index == tacos.count
         break
     end
-    puts tacos[index]
+    taco = tacos[index]
+    puts taco
     index = index + 1
 end
+
+#other option
+
+for taco in tacos
+    puts taco
+end
+
