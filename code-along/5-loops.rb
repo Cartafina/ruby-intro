@@ -9,3 +9,13 @@
 
 # Loop through tacos
 tacos = ["carnitas", "carne asada", "pollo", "pescado"]
+#start index 0
+index = 0
+#start loop
+loop do
+    if index == tacos.count
+        break
+    end
+    puts tacos[index]
+    index = index + 1
+end
