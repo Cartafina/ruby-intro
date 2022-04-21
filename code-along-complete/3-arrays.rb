@@ -8,7 +8,7 @@
 # We can build an array out of different
 # types of things, or even combine types of things if we want.
 favorite_foods = ["tacos", "pizza", "ice cream"]
-puts favorite_foods
+puts favorite_foods #if i add .inspect in the end it will show the array and not elements separate
 
 we_have_to_go_back = [4, 8, 15, 16, 23, 42]
 puts we_have_to_go_back # if you don't understand, you have a lot of TV watching to do
@@ -21,6 +21,10 @@ shopping_lists = [["milk", "eggs", "toilet paper"], ["soap", "shampoo", "shaving
 puts shopping_lists
 
 # Accessing the array
+puts favorite_foods[0]
+puts favorite_foods[3].inspect
+puts favorite_foods[-1]
+
 
 # We access elements of an array by using the square brackets [] and
 # a number, which represents the *0-based* index of the element we want
@@ -30,6 +34,8 @@ puts delish_foods[0] # the first element of the array
 puts shopping_lists[1][2] # shaving cream
 
 # Add to the array
+favorite_foods.push("more tacos")
+puts favorite_foods.inspect
 
 # We can add things to an array in a couple of different ways
 delish_foods.push("more tacos")
@@ -39,6 +45,7 @@ puts delish_foods
 # We can ask the array how many things it holds
 puts delish_foods.count
 puts shopping_lists.size
+puts shopping_lists.length
 
 # There are lots of fun things you can do with arrays:
 # https://ruby-doc.org/core-2.7.0/Array.html

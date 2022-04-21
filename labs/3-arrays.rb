@@ -15,3 +15,27 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+cami_list = ["milk", "wine", "popcorn"]
+phil_list = ["salami", "wine", "whyskey"]
+puts cami_list.inspect
+two_lists = [cami_list, phil_list]
+
+combined_list = cami_list + phil_list
+puts combined_list.inspect
+
+#Sort the list alpha
+
+sorted_list = combined_list.sort
+puts sorted_list.inspect
+
+#Remove Duplicates
+
+unique_list = sorted_list.uniq
+puts unique_list.inspect
+
+puts "Buy #{unique_list[0]}"
+puts "Buy #{unique_list[1]}"
+puts "Buy #{unique_list[2]}"
+puts "Buy #{unique_list[3]}" #Needs to do it one by one
+
